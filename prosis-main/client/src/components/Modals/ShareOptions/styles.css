@@ -1,0 +1,58 @@
+#Share.ModalContent {
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: row;
+}
+.Email.ButtonContainer {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.PDF.ButtonContainer {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#Share .Icon {
+    width: 50px;
+    height: 50px;
+    color: #625E5E;
+}
+.ButtonContainer {
+    justify-self: center;
+    align-self: center;
+}
+
+.ShareButton {
+    justify-self: center;
+    width: fit-content;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(200, 200, 200);
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.ShareButton.Email {
+    transition: color 500ms linear;
+}
+
+#open .ShareButton.Email {
+    color: #F15E30;
+}
+
+.ButtonContainer {
+    display: flex;
+    width: 90px;
+    border: 2px solid rgba(200, 200, 200, 1);
+    border-radius: 3px;
+    transition: width 700ms linear, border-color 500ms linear;
+}
+
+.Email.ButtonContainer {
+    transition: width 700ms linear, border-color 500ms linear;
+}
+
+#open.Email.ButtonContainer {
+    width: 520px;
+    border-color: rgba(241, 94, 48, 1);
+}

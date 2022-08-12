@@ -1,0 +1,38 @@
+.ResultButton {
+    background-color: white;
+    border: 3px solid #F15E30;
+    color: #F15E30;
+    border-radius: 3px;
+    height: 2.5rem;
+    font-family: Montserrat;
+    font-weight: 500;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#selected.ResultButton {
+    background-color: #F15E30;
+    color: white;
+}
+
+.ResultButton.Overview, .ResultButton.Result {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.ResultButton.Result, .ResultButton.Potroom, .ResultButton.Casthouse {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.ResultButton.Overview {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.ResultButton.Potroom {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.ResultButton.Casthouse {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}

@@ -1,0 +1,122 @@
+.Modal {
+    position: fixed;
+    z-index: 999;
+    left: 15%;
+    top: 20%;
+    background-color: white;
+    height: 400px;
+    border: 1px solid rgba(200, 200, 200, 0.2);
+    padding: 0.5rem;
+    display: grid;
+    justify-items: center;
+    transition: all 0.3s ease-out;
+    font-family: Montserrat;
+    grid-template-columns: repeat(2, 1fr);
+
+    /* grid-auto-flow: column; */
+}
+
+#default.Modal {
+    grid-template-rows: 1.5em 1fr 6fr;
+}
+
+#input.Modal {
+    grid-template-rows: 1.5em 1fr 5fr 1fr;
+}
+.Modal:not(.MainButton) > * {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.ModalBack, .ModalClose {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.ModalBack {
+    justify-self: start;
+}
+.ModalClose {
+    justify-self: end;
+}
+#modal.Title {
+    text-align: center;
+    align-self: start;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+
+.ModalContent {
+    justify-self: stretch;
+    display: grid;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.ModalContent > * {
+    margin: 0px 1rem;
+}
+
+
+
+
+#default .ModalContent {
+    width: inherit;
+    display: grid;
+    grid-template-rows: 2.5em auto;
+    justify-items: center;
+}
+
+@media (min-width: 600px) {
+    .Modal {
+        width: 600px;
+        left: calc(50% - 300px);
+    }
+}
+
+/* #Title {
+    margin-top: 0px;
+} */
+
+.Background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background-color: rgba(200, 200, 200, 0.4);
+    backdrop-filter: blur(2px);
+    overflow: hidden;
+}
+
+#Back {
+    justify-self: start;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #625E5E;
+}
+
+#BackDisabled {
+    opacity: 0%;
+}
+
+#Close {
+    justify-self: end;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #625E5E;
+}
+#Close:hover, #Back:hover {
+    color: #F15E30;
+}
+
+.Action {
+    background-color: #F15E30;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    justify-self: center;
+    border-radius: 20px;
+    border: none;
+    padding: 0px 3rem 0px 3rem;
+    height: 2.5rem;
+}

@@ -1,0 +1,82 @@
+.MultiInputContainer {
+    display: none;
+    flex-direction: column;
+    width: 0px;
+    /* margin-left: 25px; */
+    margin-right: 20px;
+    height: fit-content;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    place-self: center;
+    transition: width 500ms linear;
+    /* position: relative; */
+
+}
+
+#open .MultiInputContainer {
+    display: flex;
+    width: 400px;
+
+}
+#sendEmail.MainButton {
+    display: none;
+    place-self: center;
+    height: 2rem;
+    animation: showInput 1200ms linear;
+}
+#open #sendEmail.MainButton {
+    display: block;
+}
+.MultiInputContainer input {
+    font-family: Montserrat;
+}
+.react-multi-email > input {
+    padding: 0.4em 0.5em !important;
+}
+.react-multi-email {
+    place-self: center stretch;
+    margin-bottom: 10px;
+    opacity: 0;
+    color: rgb(98, 94, 94);
+    border-radius: 3px;
+    min-height: 25px;
+    width: 100%;
+    place-self: center;
+    display: none;
+    border: 1px solid rgba(200, 200, 200, 0.5);
+    animation: showInput 1200ms linear;
+    align-content: center;
+    padding: 0.5em 0px 0.5em 0px;
+}
+/* .react-multi-email.empty {
+    align-content: center;
+    margin: 5px;
+
+} */
+#open .react-multi-email {
+    display: flex;
+    opacity: 1;
+    transition: opacity 500ms linear;
+
+}
+.react-multi-email.focused {
+    border-color: #F15E30;
+}
+
+.react-multi-email [data-tag] {
+    background-color: rgba(241, 93, 48, 0.2);
+    font-family: Montserrat;
+    margin: 5px;
+}
+
+@keyframes showInput {
+    0% {display: none; opacity: 0;}
+    50% {display: none; opacity: 0;}
+    100% {display: flex; opacity: 1;}
+}
+
+.react-multi-email > span[data-placeholder] {
+    top: none;
+    /* margin: 5px;
+    padding: 0.5833em 0.833em; */
+}

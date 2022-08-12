@@ -1,0 +1,26 @@
+.DropDownBox {
+    height: fit-content;
+    display: grid;
+    grid-auto-flow: row;
+    border-radius: 3px;
+    box-shadow: 4px 5px 9px 2px rgba(210,210,210,0.5);
+    -webkit-box-shadow: 4px 5px 9px 2px rgba(210,210,210,0.5);
+    background-color: #F8F9FA;
+
+}
+.DropDownBox .InfoBox {
+    box-shadow: none;
+}
+
+.InfoBox {
+    display: grid;
+    padding: 0.8rem 1rem;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.DropDownContent {  
+    display: none;
+}
+#open .DropDownContent {
+    display: grid;
+}

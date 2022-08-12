@@ -1,0 +1,88 @@
+/* .App {
+  text-align: center;
+} */
+
+html {
+  background-color: white;
+}
+.Title, .Text {
+  font-family: Montserrat;
+  font-weight: 400;
+}
+
+.Title {
+  text-align: left;
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 0.4em;
+}
+
+.Text {
+  color: #625E5E;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.Title.Box {
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  padding-bottom: 0.2rem;
+  margin: 0px;
+}
+#solution.Title.Box {
+  color: white;
+  margin-bottom: 0px;
+}
+#description.Title {
+  /* text-align: left; */
+  font-size: 1rem;
+
+}
+#description.Title.Box {
+  /* text-align: left; */
+  font-size: 0.9rem;
+  font-weight: 400;
+
+}
+#description.Text {
+  text-align: center;
+  font-size: 0.9rem;
+
+}
+#description.Title, #description.Text {
+  font-weight: 450;
+  margin: 0px;
+  color: rgba(138, 135, 135, 0.9);
+}
+
+#description.Text.Box {
+  font-weight: 400;
+  padding-bottom: 0.2rem;
+}
+#amount.Text {
+  text-align: center;
+}
+#amount.Text.Box {
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+}
+
+.MainButton {
+  background-color: #F15E30;
+  border: none;
+  color: white;
+  border-radius: 30px;
+  height: 2.5rem;
+  font-family: Montserrat;
+  font-weight: 600;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: fit-content;
+}
+
+.MainButton:disabled {
+  background-color: rgb(241, 93, 48, 0.2);   
+}

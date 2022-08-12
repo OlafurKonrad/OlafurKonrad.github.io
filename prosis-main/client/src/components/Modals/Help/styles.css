@@ -1,0 +1,44 @@
+#Help.ModalContent  {
+    /* display: flex;
+    flex-direction: column; */
+    /* width: 95%; */
+    grid-template-rows: 1rem auto;
+    justify-items: start;
+
+}
+#Help.ModalContent #description.Title {
+    margin-left: 1rem;
+}
+.Instructions {
+    display: grid;
+    grid-auto-flow: row;
+    text-align: left;
+} 
+.InstructionItem {
+    display: grid;
+    justify-items: start;
+    grid-template-columns: 4rem auto;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.Number {
+    width: 2rem;
+    height: 2rem;
+    border: 3px solid #F15E30;
+    border-radius: 3px;
+    color: #625E5E;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Description {
+    align-self: center;
+    font-size: 0.8rem;
+}
+

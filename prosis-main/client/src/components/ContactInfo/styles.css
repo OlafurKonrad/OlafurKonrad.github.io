@@ -1,0 +1,117 @@
+.ContactContainer {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 6fr) 1fr; 
+    grid-template-rows: repeat(4, 1fr); 
+    row-gap: 1rem;
+    column-gap: 2rem; 
+    padding-top: 2rem;
+}
+#solution.ContactContainer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-template-columns: 1fr repeat(2, 7fr); 
+    gap: 1rem;
+    padding-top: 0px;
+    color: #625E5E;
+    font-size: 0.9rem;
+    /* margin-top: 0px */
+}
+
+    #contact.Title {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        color: white;
+        font-weight: 500;
+        text-align: center;
+        justify-self: center;
+        margin: 0px;
+    }
+    #solution #contact.Title {
+        color: rgba(98, 94, 94, 0.8);
+        font-size: 1rem;
+        align-self: center;
+
+    }
+    .ContactContainer .Icon {
+        color: white;
+        stroke-width: 2px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: 2.5rem;
+        height: 2.5rem;
+        justify-self: center;
+        align-self: center;
+    }
+    #solution .Icon {
+        color: rgba(98, 94, 94, 0.8);
+        width: 2rem;
+        height: 2rem;
+        stroke-width: 1.5px;
+    }
+
+    .ContactField {
+        border-radius: 30px;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        height: 3rem;
+        text-decoration: none;
+        padding: 0px 1rem;
+        color: #625E5E;
+        background-color: white;
+    }
+    #solution .ContactField {
+        background-color: #F8F9FA;
+        box-shadow: 4px 5px 9px 2px rgba(210,210,210,0.5);
+        -webkit-box-shadow: 4px 5px 9px 2px rgba(210,210,210,0.5);
+    }
+    
+        .Country {
+            width: 2rem;
+            height: 2rem;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            justify-self: center;
+        }
+        #solution .Country {
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+
+        .Info {
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .Person {
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .Phone {
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+
+        .Email {
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+
+        .First {
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .Second {
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+    
+

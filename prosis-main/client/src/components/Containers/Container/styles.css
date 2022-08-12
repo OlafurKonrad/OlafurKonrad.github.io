@@ -1,0 +1,48 @@
+.MasterContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat;
+}
+
+/*Styling of the container containing main content*/
+.MainContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    grid-template-areas: 
+    "nav calculator ."
+    "nav results ."
+    "nav share .";  
+}
+
+/*Styling of the containers containing the menu sidebar*/
+.MenuContainer {
+    grid-area: nav;
+    position: relative;
+    z-index: 300;
+}
+
+
+.CardContainer {
+    /* padding-top: 10vh; */
+    height: fit-content;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: inherit;
+    text-align: center;
+    justify-content: center;
+    z-index: 800;
+
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 0px;
+    color: #625E5E;
+}

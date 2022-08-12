@@ -1,0 +1,30 @@
+
+.CategoryButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.CategoryButton {
+    width: 16%;
+    display: grid;
+    grid-template-rows: auto 30%;
+    align-items: center;
+    background-color: white;
+    color: rgba(200, 200, 200, 0.8);
+    border: 2px solid rgba(200, 200, 200, 0.8);
+    border-radius: 3px;
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+#selected.CategoryButton {
+    border-color: #F15E30;
+    color: #F15E30;
+}
+
+.CategoryIcon {
+    width: 80%;
+    height: 80%;
+    justify-self: center;
+}

@@ -1,0 +1,48 @@
+.InputBox {
+    justify-self: stretch;
+    position: relative;
+    display: flex;
+    height: fit-content;
+    font-family: Montserrat;
+    text-align: left;
+}
+
+.InputBox input {
+    align-self: flex-end;
+    font-family: Montserrat;
+    width: 100%;
+    outline: 0; 
+    border: 2px solid rgba(200, 200, 200, 0.5);
+    border-radius: 3px;
+    color: rgb(98, 94, 94);
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding-left: 0.6rem;
+    height: 45px;
+}
+
+.InputBox input:focus {
+    border-color: #F15E30;
+}
+
+.Placeholder {
+    align-self: flex-start;
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    padding-left: 0.6rem;
+    color: rgba(98, 94, 94, 0.8);
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: 0.1s ease all;
+    transform: translateY(-50%);
+  
+}
+  
+input:focus ~ .Placeholder, .Filled .Placeholder {
+    align-self: flex-start;
+    top: 16%;
+    font-size: 11px;
+    color: rgba(98, 94, 94, 0.6);
+    font-weight: 500;
+}

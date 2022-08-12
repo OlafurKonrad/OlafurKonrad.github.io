@@ -1,0 +1,16 @@
+.MainButton {
+    background-color: #F15E30;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    height: 2.5rem;
+    font-family: Montserrat;
+    font-weight: 600;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: fit-content;
+}
+
+.MainButton:disabled {
+    background-color: rgb(241, 93, 48, 0.2);   
+}

@@ -1,0 +1,82 @@
+.DropDownBox.Solution {
+    background-color: #F15E30;
+    border: 2px solid #F15E30;
+}
+#Solution.InfoBox {
+    border-radius: 0px;
+    background-color: #F15E30;
+}
+#Solution.DropDownContent {
+    background-color: white;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 0px;
+    background-color: white;
+}
+
+#Solution.InfoBox {
+    grid-auto-flow: column;
+    align-self: stretch;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    align-items: center;
+}
+#Solution.InfoBox > * {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+#Solution.DropDownContent > * {
+    margin: 1rem;
+    color: #625E5E;
+    font-size: 0.9rem;
+}
+#Solution.DropDownContent > *:not(.ContactContainer) {
+    text-align: left;
+}
+
+#Solution.DropDownContent > :nth-last-child(2) {
+    padding-bottom: 1rem;
+    margin-bottom: 0px;
+    border-bottom: 2px solid rgba(200, 200, 200, 0.5);
+}
+#Solution.DropDownContent #default.Text {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#Solution.DropDownContent .Device {
+    justify-self: stretch;
+    padding: 1rem 0px;
+    font-weight: 500;
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #F8F9FA;
+    box-shadow: 4px 5px 9px 2px rgba(210,210,210,0.5);
+    -webkit-box-shadow: 4px 5px 9px 2px rgba(210,210,210,0.5);
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.Device :nth-child(odd) { 
+    align-self: end;
+    margin: 0px;
+}
+.Device :nth-child(1) { 
+    font-size: 1rem;
+    font-weight: 500;
+}
+.Device :nth-last-child(1) { 
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.Device :nth-child(even) { 
+    margin: 1rem 0px;
+    margin-bottom: 0.2rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+

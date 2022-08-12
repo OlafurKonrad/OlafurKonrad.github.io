@@ -1,0 +1,40 @@
+#SectionDetails.DropDownContent {
+    grid-auto-flow: column;
+}
+
+#SectionDetails.DropDownContent > *{
+    margin: 0px 1rem;
+}
+#SectionDetails.InfoBox {
+    grid-template-columns: repeat(2, auto) 3rem;
+    grid-auto-flow: column;
+}
+.DropDownBox.SectionDetails {
+    margin-bottom: 1rem;
+}
+#SectionDetails .Arrow {
+    color: #F15E30;
+}
+.SectionContent {
+    display: grid;
+    grid-auto-flow: column;
+    margin-bottom: 1rem;
+}
+#profit.SectionContent {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+#other.SectionContent {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#SectionDetails.InfoBox :nth-last-child(-n+3) {
+    justify-self: end;
+}
+.SectionContent :nth-child(-n+2) {
+    justify-self: start;
+}
+.SectionContent:not(#comment.SectionContent) :nth-last-child(-n+2) {
+    justify-self: end;
+}

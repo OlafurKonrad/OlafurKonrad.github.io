@@ -1,0 +1,35 @@
+#Benefits.InfoBox {
+    /* padding-top: 1rem;
+    padding-bottom: 1rem; */
+    text-align: left;
+    grid-template-rows: repeat(2, auto);
+    margin-bottom: 0px;
+}
+
+#Benefits .Title.Box {
+    color: #F15E30;
+    padding-bottom: 1rem;
+}
+/* #Benefits.InfoBox > * {
+    margin-left: 1rem;
+    margin-right: 1rem;
+} */
+
+#Benefits.InfoBox ul {
+    justify-self: center;
+    padding: 0px;
+    font-size: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    gap: 1em;
+}
+#Benefits.InfoBox ul li{
+    /* margin-bottom: 1rem;
+    margin-right: 1rem; */
+    padding: 0.4em 0.5em;
+    font-weight: 600;
+    background-color: rgba(241, 93, 48, 0.2);
+    border-radius: 3px;
+}

@@ -1,0 +1,22 @@
+[id='General Information'].ModalContent {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-flow: row;
+}
+
+[id='General Information'].ModalContent > div {
+    margin: 0px 1rem;
+}
+
+[id='General Information'].ModalContent #email {
+   grid-column-start: 1;
+   grid-column-end: 3;
+}
+
+#modalButton.MainButton {
+    align-self: start;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

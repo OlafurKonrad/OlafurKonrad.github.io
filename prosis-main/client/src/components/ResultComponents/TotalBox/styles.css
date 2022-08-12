@@ -1,0 +1,63 @@
+.TotalBox {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+
+    grid-template-rows: 1fr 3fr 1fr 1fr;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: #F8F9FA;
+    box-shadow: 4px 5px 9px 2px rgba(210,210,210,0.5);
+    -webkit-box-shadow: 4px 5px 9px 2px rgba(210,210,210,0.5);
+    align-items: center;
+
+}
+
+.TotalBox #description.Title {
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    padding: 0.5rem 1rem;
+}
+.Divider {
+    border-left: 2px solid rgba(200, 200, 200, 0.4);
+    width: 0px;
+    justify-self: start;
+    align-self: stretch;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin: 0px;
+}
+#upperline.Divider {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#lowerline.Divider {
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.TotalBox #amount.Text {
+    color: rgb(26, 221, 69);
+    font-size: 2rem;
+    font-weight: 650;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.TotalBox #description.Text {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.TotalBox .Tonne {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+.TotalBox .Annual {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
