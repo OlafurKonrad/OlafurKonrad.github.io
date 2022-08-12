@@ -1,0 +1,70 @@
+.StartContainer {
+    width: fit-content;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 3fr 1fr 2fr;
+    grid-auto-flow: column;
+    justify-items: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.StartContainer h1 {
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.1em;
+}
+
+.StartContainer h2 {
+    font-weight: 420;
+    font-size: 1rem;
+    text-align: center;
+    width: 70%;
+    color: rgba(138, 135, 135, 0.9);
+}
+
+.StartContainer h3 {
+    font-weight: 420;
+    font-size: 0.9rem;
+    color: rgba(138, 135, 135, 0.9);
+    align-self: end;    
+}
+
+#Begin {
+    height: 4rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+}
+
+.TermsAndConditions {
+    align-self: end;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    color: #8A8787;
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
+.Checkbox {
+    color: rgba(138, 135, 135, 0.8);
+    box-shadow: 4px 5px 9px 2px rgba(210,210,210,0.5);
+    -webkit-box-shadow: 4px 5px 9px 2px rgba(210,210,210,0.5);
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+#checked.Checkbox {
+    color: #F15E30;
+}
+
+
+
+
+
+
+

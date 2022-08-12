@@ -1,0 +1,28 @@
+#initial #calculatorContent.ContentContainer { height: 100%; }
+#initial #calculatorContent .NewContent {   align-self: stretch; justify-self: stretch;}
+
+#calculatorContent .NewContent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#calculatorContent #primary.NewContent {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#calculatorContent #secondary.NewContent {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#calculator.CardContainer { grid-area: calculator; }
+
+#initial #calculator.CardContainer {
+    height: 80vh;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    align-items: stretch;
+}
+

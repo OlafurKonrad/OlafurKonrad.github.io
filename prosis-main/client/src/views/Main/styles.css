@@ -1,0 +1,9 @@
+#calculator {
+    grid-area: calculator;
+}
+#results {
+    grid-area: results;
+}
+#share {
+    grid-area: share;
+}

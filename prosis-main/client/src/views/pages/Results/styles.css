@@ -1,0 +1,70 @@
+
+#initial #results.CardContainer { 
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+#results.CardContainer { grid-area: results; }
+
+#resultContent .NewContent {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 2rem;
+}
+    #InputWindow.Container{
+        align-content: center;
+        justify-self: start;
+        display: flex;
+        flex-direction: column;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        
+    }
+
+        h2.ResTitle {
+            grid-area: title;
+            justify-self: center;
+            font-weight: 500;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+        .ResInfo {
+            grid: info;
+            font-weight: 600;
+            font-size: 0.8rem;
+            margin-bottom: 2rem;
+        }
+
+        #InputButtons.Container{
+            grid-area: buttons;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 30%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+      }
+      
+      .active, .accordion:hover {
+        background-color: #ccc;
+      }
+      
+      .panel {
+        padding: 0 10px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+
